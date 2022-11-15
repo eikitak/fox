@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Ranchers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <section class="top">
+
+    </section>
+
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <h1>Hide Takase<br>HTML/CSS<br>Portfolio</h1>
+            </div>
+            <ul>
+                <li><a href="#flexBox">FlexBox</a></li>
+                <li><a href="#grid">GridLayout</a></li>
+                <li><a href="#dressingUp">Other</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+
+    <main class="gridWrap">
+
+        <section id="flexBox">
+            <h2><span class="bgextend bgDUextendTrigger"><span class="bgappearTrigger">FlexBox</span></span></h2>
+            <p>画像クリックでモーダルウインドウが開閉します</p>
+            <p>ハートを押すといいねが増えます</p>
+            <p>ボタンでカードの並び替えができます</p>
+            <div class="flexBtn">
+                <div class="btn btn2 likeOrder">
+                    <div>Likes</div>
+                </div>
+                <div class="btn btn2 oldOrder">
+                    <div>Age</div>
+                </div>
+            </div>
+
+            <div class="flexBox">
+                <div class="matchWrap">
+                </div>
+            </div>
+
+
+            <div class="cardTemplate">
+                <li class="match">
+                    <div class="thumb">
+                        <div class="imgBorder">
+                            <img class="thumbImg modal-open" src="" alt="">
+                        </div>
+                    </div>
+                    <div class="prof">
+                        <h4></h4>
+                        <p class="age"></p>
+                        <p class="desc40">
+                        </p>
+                        <div class="heart">
+                            <div class="likeBtn"><i class="fa-solid fa-heart"></i></div>
+                            <p class="likes"></p>
+                        </div>
+                    </div>
+                </li>
+            </div>
+            <div class="modalWrap">
+            </div>
+            <div class="modalCard">
+            </div>
+
+        </section>
+
+        <section ID="grid" class="light" theme="">
+            <h2><span class="bgextend bgDUextendTrigger"><span class="bgappearTrigger">GridLayout</span></span></h2>
+            <p>780px-1000pxで2列目が変則カラム</p>
+            <p>ボタンを押すとカラーテーマ変更</p>
+            <div class="btnWidth">
+                <div class="btn btn1 dark">
+                    <div>Dark-Mode</div>
+                </div>
+            </div>
+            <ul class="grid-12 pc-3">
+
+                <li class="card">
+                    <h3><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">about me</span></span>
+                    </h3>
+
+                    <p>高瀬英紀(48)<br>
+                        郵便局員28年目<br>
+                        22年6月、ノートPC購入をきっかけにタイピングの練習を開始<br>
+                        その後WEBサイト制作の勉強を始めました</p>
+                </li>
+                <li class="card">
+                    <h3><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">なぜ転職?</span></span></h3>
+
+                    <p>クリエイティブな職業に憧れを持ち続けていましたが、
+                        WEBの勉強を始めてみるととても楽しくて、これ絶対職業にしたいという衝動が湧きあがりました</p>
+                </li>
+                <li class="card">
+                    <h3><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">いつ学習?</span></span></h3>
+
+                    <p>通勤電車内やドトールなどでの独学を毎朝40分ほどしています<br>
+                        22年10月、妻に転職を見据えた学習をカミングアウトし自宅にモニタとデスクを導入<br>
+                        休日も学習できる環境を整えました</p>
+                </li>
+            </ul>
+            <ul class="grid-12 pc-2 row">
+                <li class="card">
+                    <h3><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">どのように？</span></span></h3>
+
+                    <p>書籍やネットの情報を頼りに独学しています</p>
+                    <table>
+                        <tr>
+                            <th>書籍</th>
+                            <td>1冊ですべて身につくHTML & CSSとWebデザイン入門講座<br>
+                                動くWebデザインアイディア帳<br>
+                                WordPress 仕事の現場でサッと使える! デザイン教科書</td>
+                        </tr>
+                        <tr>
+                            <th> website</th>
+                            <td> サルワカetc</td>
+                        <tr>
+                            <th>Youtube</th>
+                            <td>webの神様etc</td>
+                        </tr>
+                    </table>
+                    <p>その他困ったときはひたすらググって調べています</p>
+                </li>
+                <li class="card">
+                    <h3><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">どんなことを？</span></span>
+                    </h3>
+
+                    <p>10月までは妻に内緒で出先のみでの学習だったため、デザインソフトの勉強は後回しとして、コードの学習のみ進めてきました</p>
+                    <table>
+                        <tr>
+                            <th>HTML/CSS</th>
+                            <td>ひと通り</td>
+                        </tr>
+                        <tr>
+                            <th>JavaScript</th>
+                            <td>if / else, for 文あたりまでの理解</td>
+                        </tr>
+                        <tr>
+                            <th>JQuery</th>
+                            <td>プラグイン導入・設定に支障ない程度</td>
+                        </tr>
+                        <tr>
+                            <th>WordPress</th>
+                            <td>オリジナルテーマ制作の書籍を1.5周</td>
+                        </tr>
+                        <tr>
+                            <th>XD</th>
+                            <td>カンプからのコーディングは問題なく可能</td>
+                        </tr>
+                        <tr>
+                            <th>Ps/Ai</th>
+                            <td>未学習</td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+        </section>
+
+
+        <section id="dressingUp">
+            <h2><span class="bgextend bgDUextendTrigger"><span class="bgappearTrigger">WEAR</span></span></h2>
+            <p>着せ替えおじさん</p>
+            <div class="dressingBox">
+                <div class="head">
+                    <img class="G-hat parts animate__animated animate__rotateOutUpRight" src="images/G-hat.png" alt="">
+                    <img class="sha-helmet parts animate__animated animate__rotateOutUpRight" src="images/sha-helmet.png"
+                        alt="">
+                    <img class="rekishi parts animate__animated animate__rotateOutUpRight" src="images/rekishi-head.png"
+                        alt="">
+                </div>
+                <div class="face">
+                    <img class="G-hat parts animate__animated animate__fadeOutUp" src="images/G-face.png" alt="">
+                    <img class="sha-mask parts animate__animated animate__fadeOutUp" src="images/sha-mask.png" alt="">
+                    <img class="rekishi parts animate__animated animate__fadeOutUp" src="images/rekishi-face.png" alt="">
+                </div>
+                <div class="wear">
+                    <img class="G-hat parts animate__animated animate__slideOutRight" src="images/G-wear.png" alt="">
+                    <img class="sha-wear parts animate__animated animate__slideOutRight" src="images/sha-wear.png" alt="">
+                    <img class="rekishi parts animate__animated animate__slideOutRight" src="images/rekishi-wear.png" alt="">
+                </div>
+            </div>
+            <div class="dressingChoice">
+                <ul class="slider slider02">
+                    <li class="slideBox head">
+                        <div class="btnDU" data-parts='.G-hat' data-ininin="animate__bounceInDown "
+                            data-outout="animate__rotateOutUpRight" data-sites=".head"><img src="images/G-hat-sm.png"
+                                alt="">
+                        </div>
+                        <div class="btnDU" data-parts=".sha-helmet" data-ininin='animate__bounceInDown '
+                            data-outout="animate__rotateOutUpRight" data-sites=".head"><img src="images/sha-helmet-sm.png"
+                                alt=""></div>
+                        <div class="btnDU" data-parts=".rekishi" data-ininin="animate__bounceInDown "
+                            data-outout="animate__rotateOutUpRight" data-sites=".head"><img src="images/rekishi-head-sm.png"
+                                alt=""></div>
+                    </li>
+                    <li class="slideBox face">
+                        <div class="btnDU" data-parts=".G-hat" data-ininin="animate__fadeInUp"
+                            data-outout="animate__fadeOutUp" data-sites=".face"><img src="images/G-face-sm.png" alt="">
+                        </div>
+                        <div class="btnDU" data-parts=".sha-mask" data-ininin="animate__fadeInUp"
+                            data-outout="animate__fadeOutUp" data-sites=".face"><img src="images/sha-mask-sm.png" alt="">
+                        </div>
+                        <div class="btnDU" data-parts=".rekishi" data-ininin="animate__fadeInUp"
+                            data-outout="animate__fadeOutUp" data-sites=".face"><img src="images/rekishi-face-sm.png"
+                                alt=""></div>
+                    </li>
+                    <li class="slideBox wear">
+                        <div class="btnDU" data-parts=".G-hat" data-ininin="animate__slideInLeft"
+                            data-outout="animate__slideOutRight" data-sites=".wear"><img src="images/G-wear-sm.png" alt="">
+                        </div>
+                        <div class="btnDU" data-parts=".sha-wear" data-ininin="animate__slideInLeft"
+                            data-outout="animate__slideOutRight" data-sites=".wear"><img src="images/sha-wear-sm.png"
+                                alt=""></div>
+                        <div class="btnDU" data-parts=".rekishi" data-ininin="animate__slideInLeft"
+                            data-outout="animate__slideOutRight" data-sites=".wear"><img src="images/rekishi-wear-sm.png"
+                                alt=""></div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <section class="plugin">
+
+        <h2>Plugins</h2>
+        <h3>slick</h3>
+        <ul class="slider slider01">
+            <li><img src="images/22061801.jpg" alt=""></li>
+            <li><img src="images/22061802.jpg" alt=""></li>
+            <li><img src="images/22061803.jpg" alt=""></li>
+            <li><img src="images/22061804.jpg" alt=""></li>
+            <li><img src="images/22061805.jpg" alt=""></li>
+        </ul>
+
+        <h3>Chart.js</h3>
+        <div class="chartBox">
+            <h3>Road to e-typing 300pts</h3>
+            <canvas id="chart01"></canvas>
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+        <a href="#"><h3>Thank you for watching!!</h3></a>
+        <a href="#">↑ Back to TOP ↑</a>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/99b3421319.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
