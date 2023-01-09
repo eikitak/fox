@@ -29,6 +29,7 @@ img {
     vertical-align: bottom;
 }
 
+
 th {
     vertical-align: top;
 }
@@ -148,193 +149,26 @@ html {
 
 #flexBox .matchWrap {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
+}
+
+.matchWrap img {
+    max-width: 550px;
+    margin: 20px auto;
+    padding: 10px;
+    border: #fff 5px solid;
+    transition: .3s;
+}
+
+.matchWrap img:hover {
+    filter: brightness(1.1);
+    transform: scale(1.05);
 }
 
 #flexBox h2 {
     margin: 40px;
 }
-
-.match {
-    color: #000000;
-}
-/* フレックスボックス：カード */
-.flexBtn {
-    display: flex;
-    justify-content: center;
-}
-
-#flexBox .match {
-    flex: 1 1 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 280px;
-    margin: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-}
-
-.match p {
-    color: #000;
-}
-
-.match .desc40 {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-    overflow: hidden;
-}
-
-.match .thumb {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.match img {
-    height: 200px;
-    object-fit: cover;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.match img:hover {
-    transform: scale(1.4) rotate(15deg);
-    opacity: 0.7;
-        filter: brightness(120%);
-    }
-
-
-.heart {
-    display: flex;
-    justify-content: space-between;
-    width: 80px;
-    margin: 20px auto 0;
-    align-items: flex-end;
-    transition: 0.3s;
-}
-
-.heart .likeBtn {
-    cursor: pointer;
-    font-size: 30px;
-    color: #ff34d0;
-    transition: 0.3s;
-}
-
-.heart .likeBtn:hover {
-    transform: scale(1.2);
-    color: #ff0084;
-}
-
-.heart .likes {
-    margin-left: 20px;
-    font-family: 'Ranchers', cursive;
-    font-size: 30px;
-}
-/* フレックスボックス：END */
-
-
-/* モーダルウインドウ */
-.modalWrap.active {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    background-color: #000;
-    opacity: 0.8;
-    z-index: 10;
-}
-
-.modalCard.active {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    padding: 20px;
-    width: 90vw;
-    max-width: 700px;
-    height: 500px;
-    top: 50%;
-    left: 50%;
-    align-items: center;
-    transform: translateX(-50%) translateY(-50%);
-    color: #000;
-    background: linear-gradient(180deg, #cfa3ee, #E4A972);
-    border: #ff34d0 solid 2px;
-    border-radius: 10px;
-    z-index: 11;
-}
-
-.modalCard.active .thumb {
-    width: 400px;
-    margin-right: 1em;
-    padding: 10px;
-}
-
-.modalCard.active img {
-    height: 400px;
-    border-radius: 5px;
-    object-fit: cover;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.modalCard.active img:hover {
-    transform: scale(0.95);
-    opacity: 0.8;
-    filter: brightness(0.5);
-}
-
-.modalCard.active .thumb::after {
-    display: block;
-    content: '画像クリックで閉じます';
-    font-size: 12px;
-    color: #000;
-}
-
-.modalCard.active .prof {
-    flex: 0 0 30%;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
-}
-
-.modalCard.active .desc40 {
-    -webkit-line-clamp: none;
-    overflow: auto;
-}
-
-.modalCard.active .heart {
-    margin: 20px auto;
-}
-
-.cardTemplate {
-    display: none;
-}
-/* モーダルウインドウ：メディアクエリ */
-@media (max-width:780px) {
-
-    .modalCard.active {
-        flex-direction: column;
-        height: 600px;
-        overflow-y: scroll;
-    }
-
-    .modalCard.active .thumb {
-        margin-right: 0;
-    }
-
-    .modalCard.active img {
-        height: 300px;
-        padding-top: 20px;
-    }
-}
-/* モーダルウインドウ：END */
 
 
 /* グリッドレイアウト */
