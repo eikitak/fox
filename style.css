@@ -132,6 +132,14 @@ html {
 #test {
     text-align: center;
     margin: 40px;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+#test img {
+    max-width: 700px;
+    transition: .3s;
 }
 
 
@@ -154,13 +162,11 @@ html {
 }
 
 .matchWrap img {
-    max-width: 550px;
-    margin: 20px auto;
-    padding: 10px;
-    border: #fff 5px solid;
+    width: 100%;
+    object-fit: cover;
     transition: .3s;
 }
-
+#test img:hover,
 .matchWrap img:hover {
     filter: brightness(1.1);
     transform: scale(1.05);
@@ -168,6 +174,14 @@ html {
 
 #flexBox h2 {
     margin: 40px;
+}
+
+.ss-area {
+    margin: 20px auto;
+    width: 100%;
+    max-width: 570px;
+    border: 5px plum solid;
+    overflow: hidden;
 }
 
 
