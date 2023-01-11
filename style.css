@@ -130,8 +130,10 @@ html {
 
 /* 工事中 */
 #test {
+    grid-column: 2;
+    grid-row: 1;
     text-align: center;
-    margin: 40px;
+    margin-bottom: 40px;
     background-color: #000;
     color: #fff;
     padding: 20px;
@@ -154,7 +156,7 @@ html {
 #flexBox {
     /* margin-top: 20px; */
     padding: 30px;
-    grid-row: 1;
+    grid-row: 2;
     grid-column: 2;
     color: #fff;
     background-color: #000;
@@ -189,7 +191,7 @@ html {
     max-width: 570px;
     border: 5px plum solid;
     overflow: hidden;
-    padding: 20px;
+    padding: 20px 10px;
 }
 
 
@@ -197,7 +199,7 @@ html {
 #grid {
     margin-top: 40px;
     grid-column: 2;
-    grid-row: 2;
+    grid-row: 3;
     padding: 3%;
     background-color: #fff;
     text-align: center;
@@ -255,7 +257,7 @@ html {
 #dressingUp {
     background-color: #000;
     grid-column: 2;
-    grid-row: 3;
+    grid-row: 4;
     margin-top: 40px;
     /* padding: 40px; */
     text-align: center;
@@ -526,9 +528,21 @@ svg {
        .gridWrap {
         grid-template-columns: none;
        }
-
-       #flexBox {
+       #test {
+        margin: 0 0 30px;
+        padding: 40px 0 0;
+       }
+       #test p {
         padding: 5px;
+       }
+       #flexBox {
+        padding: 0;
+       }
+       #grid {
+        padding: 0;
+       }
+       .ss-area {
+        padding: 20px 0;
        }
     }
 }
